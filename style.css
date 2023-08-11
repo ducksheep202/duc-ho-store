@@ -1,0 +1,602 @@
+/*RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Ho Minh Duc
+ID: s3994277
+Acknowledgement: W3S, some of the vietnam website for css and html, youtube videos, font awesome,...*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.all{
+    padding: 40px 80px;
+}
+.all2 {
+    padding: 40px 0;
+}
+#feature{
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .feat-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .feat-box:hover {
+    box-shadow: red;
+}
+#feature .feat-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    display: inline-block;
+}
+#feature .feat-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-link ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.b-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.b-btn:hover {
+  border: 1px solid red;
+  background: red;
+  transition: 1s;
+}
+nav .fa {
+  display: none;
+}
+#a-anime{
+    text-align: center;
+}
+#a-anime .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#a-anime .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#a-anime .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#a-anime .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#a-anime .pro .des span{
+    color:purple;
+    font-size: 12px;
+}
+#a-anime .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#a-anime .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+#a-anime .pro .des h4{
+    padding-top:7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178
+}
+#a-anime .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#a-anime .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("image/discount.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: white;
+    font-size: 16px;
+}
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: red;
+}
+button .normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color:black;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#banner button:hover{
+    background-color: #088178;
+    color: white;
+}
+#banner2 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("image/banner2.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner2 .banner-box h2{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner2 .banner-box h3{
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+#banner2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner2 .b-box{
+    background-image: url("image/banner3.jpg");
+}
+#banner2 .b-box2{
+    background-image: url("image/banner4.png");
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("image/newsletter.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;  
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+.breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.breadcrumb p{
+    font-size: 40px;
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color:black;
+}
+.breadcrumb strong{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+#details .large-image{
+    display:flex;
+    width: 34%;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.small-image-grp{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.small-image-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#details{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+#details .book-description{
+    width: 50%;
+    padding-top: 30px;
+}
+#details .book-description h2{
+    font-size: 120px;
+}
+#details .book-description button {
+    background-color: #088178;
+    color: white;
+    width: 184px;
+    height: 67px;
+    font-size: 26px;
+}
+.description h2{
+    font-size: 120px;
+}
+.description p{
+    line-height: 30px;
+    font-size: 25px;
+}
+#form-de form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-de form span{
+    font-size: 50px;
+}
+#form-de form h2{
+    font-size: 70px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#form-de form input, #form-de form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+#form-de form button {
+    font-size: 39px;
+    background-color: #088178;
+    color: white;
+    width: 270px;
+    height: 47px;
+}
+.contact1{
+    font-size: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:992px) {
+    .all{
+        padding: 40px 40px;
+    }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-link ul li {
+    display: block;
+  }
+  .nav-link {
+    position: absolute;
+    background: red;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-link ul {
+    padding: 30px;
+  }
+  #a-anime .container{
+    justify-content: center;
+  }
+  #a-anime .pro{
+    margin: 15px;
+  }
+  #banner{
+    height: 20vh;
+  }
+  #banner2{
+    padding:0 40px;
+  }
+  #banner2 .banner-box{
+    width: 28%;
+  }
+  #newsletter .form{
+    width: 70%;
+  }
+   .breadcrumb p{
+        font-size: 34px;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+    }
+    .breadcrumb strong {
+    font-size: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+#details {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+#details .book-description h2 {
+    font-size: 70px;
+}
+.description h2 {
+    font-size: 35px;
+}
+.description p {
+    line-height: 30px;
+    font-size: 15px;
+}
+#details .book-description h2 {
+    font-size: 35px;
+    margin-left: 138px;
+}
+#details .book-description button {
+    background-color: #088178;
+    color: white;
+    width: 111px;
+    height: 37px;
+    font-size: 17px;
+    margin-left: 109px;
+}
+.small-image-grp {
+    display: flex;
+    width: 750px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-direction: row;
+}
+#details .large-image {
+    width: 641px;
+    margin-right: 0px;
+}
+}
+@media (max-width: 768px;) {
+    .breadcrumb p{
+        font-size: 34px;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+    }
+    .breadcrumb strong {
+    font-size: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+#details {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+#details .book-description h2 {
+    font-size: 70px;
+}
+.description h2 {
+    font-size: 35px;
+}
+.description p {
+    line-height: 30px;
+    font-size: 15px;
+}
+#details .book-description h2 {
+    font-size: 35px;
+    margin-left: 138px;
+}
+#details .book-description button {
+    background-color: #088178;
+    color: white;
+    width: 111px;
+    height: 37px;
+    font-size: 17px;
+    margin-left: 109px;
+}
+.small-image-grp {
+    display: flex;
+    width: 750px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-direction: row;
+}
+#details .large-image {
+    width: 641px;
+    margin-right: 0px;
+}
+}

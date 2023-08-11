@@ -1,0 +1,119 @@
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Ho Minh Duc
+ID: s3994277
+Acknowledgement: W3S, some of the vietnam website for css and html, youtube videos, font awesome,...-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOK STORE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;600;700&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src="image/logo.png" alt="logo" /></a>
+          <div class="nav-link" id="navlinks">
+            <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="sub.html">Action Manga</a></li>
+              <li><a href="sub.html">Romance Manga</a></li>
+              <li><a href="#">Shopping Cart</i>
+              </a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </section>
+    <div class="breadcrumb">
+        <a href="index.html"><p>Home</p></a><strong>></strong> <a href="sub.html"><p> Science Fiction Romance</p></a> <strong>></strong> <a href="index.html"><p>Mobile Suit Gundam: The 08th MS Team U.C.0079 + α</p></a>
+    </div>
+    <section id="details" class="all">
+        <div class="large-image">
+            <img src="image/mobile.jpg" width="100%" id="large" alt="">
+        </div>
+        <div class="small-image-grp">
+          <div class="small-image-col">
+              <img src="image/mobile1.jpg" width="100%" class="small-image" alt="">
+          </div>
+          <div class="small-image-col">
+              <img src="image/mobile2.jpg" width="100%" class="small-image" alt="">
+          </div>
+          <div class="small-image-col">
+              <img src="image/mobile3.jpg" width="100%" class="small-image" alt="">
+          </div>
+      </div>
+        <div class="book-description">
+            <h2>$26</h2>
+            <button class="normal">Add To Cart</button>
+        </div>
+    </section>
+    
+    <div class="description">
+        <h2>Mobile Suit Gundam: The 08th MS Team U.C.0079 + α</h2>
+        <p>Universal Century 0079: The jungles of Southeast Asia. During the One Year War, the Earth Federation and the Principality of Zeon are fighting a brutal guerrilla war for control of the area and its resources. Zeon’s best hope for victory in the region rests with an experimental mobile armor, the Apsaras Project and its pilot, Aina Sahalin. Meanwhile the Earth Federal Army, which has been fighting the Zeon in the region, receive reinforcements in the form of Ensign Shiro Amada, newly named commander of the 08th MS Team. Aina and Shiro have met each other from a mutual rescue in space, but when Shiro discovers that Aina is in fact the pilot of the Zeon mobile armor he is arrested for treason. The Federation offers Shiro one chance at redemption: He must take the 08th MS Team deep into Zeon held territory to find Zeon’s hidden base. With the Zeon backed into a corner, and the Federation dependent on Shiro and his team for victory, the star crossed lovers must decide where their true allegiances lie: with each other, or with their respective sides.</p>
+    </div>
+    <!--newsletter-->
+    <section id="newsletter" class="all all2">
+        <div class="ntext">
+            <h4>Sign Up For Upcoming Manga</h4>
+            <p>Get your E-mail updates about our <span>latest manga</span> and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your E-mail Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="all">
+        <div class="col">
+            <a href="#"><h4>About Us</h4></a>
+            <p>We are a reputable manga selling website established in August 2023.<br> We are one of the websites that have the official copyright of the latest manga volumes and published series.<br>Thank you for supporting us from the beginning</p>
+        </div>
+        <div class="col">
+            <a href="#"><h4>Privacy Policy</h4></a>
+        </div>
+        <div class="col">
+            <a href="contactus.html"><h4>Terms</h4></a>
+        </div>
+        <div class="col1">
+            <a href="#"><h4>Contact Us</h4></a>
+            <a href="https://www.facebook.com/duc.hominh.58/" target="_blank"><img src="photo/fb logo.webp" width="50"/></a>
+            <a href="https://www.instagram.com/minduc2103/" target="_blank"><img src="photo/insta.svg" width="50"/></a>
+            <a href="tel: 0765776989" target="_blank"><img src="photo/phone.png" width="50"/></a>
+        </div>
+        <div class="copyright">
+            <p>@ 2023, DucHo etc - MangaBookStore</p>
+        </div>
+    </footer>
+    <!------js for toggle menu------>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function openmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
